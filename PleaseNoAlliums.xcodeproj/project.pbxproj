@@ -9,21 +9,223 @@
 /* Begin PBXBuildFile section */
 		AB93C69F28FC0D6500336E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C69E28FC0D6500336E71 /* AppDelegate.swift */; };
 		AB93C6A128FC0D6500336E71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6A028FC0D6500336E71 /* SceneDelegate.swift */; };
-		AB93C6A328FC0D6500336E71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6A228FC0D6500336E71 /* ViewController.swift */; };
-		AB93C6A628FC0D6500336E71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB93C6A428FC0D6500336E71 /* Main.storyboard */; };
 		AB93C6A828FC0D6500336E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB93C6A728FC0D6500336E71 /* Assets.xcassets */; };
-		AB93C6AB28FC0D6500336E71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB93C6A928FC0D6500336E71 /* LaunchScreen.storyboard */; };
+		AB93C6E228FC116D00336E71 /* RSEANGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6B428FC116D00336E71 /* RSEANGenerator.swift */; };
+		AB93C6E328FC116D00336E71 /* RSUnifiedCodeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6B528FC116D00336E71 /* RSUnifiedCodeValidator.swift */; };
+		AB93C6E428FC116D00336E71 /* RSCode39Mod43Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6B628FC116D00336E71 /* RSCode39Mod43Generator.swift */; };
+		AB93C6E528FC116D00336E71 /* RSCode39Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6B728FC116D00336E71 /* RSCode39Generator.swift */; };
+		AB93C6E628FC116D00336E71 /* RSCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6B828FC116D00336E71 /* RSCodeReaderViewController.swift */; };
+		AB93C6E728FC116D00336E71 /* RSITF14Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6B928FC116D00336E71 /* RSITF14Generator.swift */; };
+		AB93C6E828FC116D00336E71 /* RSCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6BA28FC116D00336E71 /* RSCodeGenerator.swift */; };
+		AB93C6E928FC116D00336E71 /* RSCodeDataMatrixGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6BB28FC116D00336E71 /* RSCodeDataMatrixGenerator.swift */; };
+		AB93C6EA28FC116D00336E71 /* RSCode128Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6BC28FC116D00336E71 /* RSCode128Generator.swift */; };
+		AB93C6EB28FC116D00336E71 /* RSUnifiedCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6BD28FC116D00336E71 /* RSUnifiedCodeGenerator.swift */; };
+		AB93C6EC28FC116D00336E71 /* RSCodeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6BE28FC116D00336E71 /* RSCodeLayer.swift */; };
+		AB93C6ED28FC116D00336E71 /* RSCornersLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6BF28FC116D00336E71 /* RSCornersLayer.swift */; };
+		AB93C6EE28FC116D00336E71 /* RSUPCEGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6C028FC116D00336E71 /* RSUPCEGenerator.swift */; };
+		AB93C6EF28FC116D00336E71 /* RSCode93Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6C128FC116D00336E71 /* RSCode93Generator.swift */; };
+		AB93C6F028FC116D00336E71 /* RSFocusMarkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6C228FC116D00336E71 /* RSFocusMarkLayer.swift */; };
+		AB93C6F128FC116D00336E71 /* RSExtendedCode39Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6C328FC116D00336E71 /* RSExtendedCode39Generator.swift */; };
+		AB93C6F228FC116D00336E71 /* RSITFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6C428FC116D00336E71 /* RSITFGenerator.swift */; };
+		AB93C6F328FC116D00336E71 /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6C628FC116D00336E71 /* Format.swift */; };
+		AB93C6F428FC116D00336E71 /* Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6C728FC116D00336E71 /* Haneke.swift */; };
+		AB93C6F528FC116D00336E71 /* String+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6C828FC116D00336E71 /* String+Haneke.swift */; };
+		AB93C6F628FC116D00336E71 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6C928FC116D00336E71 /* Log.swift */; };
+		AB93C6F728FC116D00336E71 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6CA28FC116D00336E71 /* Data.swift */; };
+		AB93C6F828FC116D00336E71 /* CryptoSwiftMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6CB28FC116D00336E71 /* CryptoSwiftMD5.swift */; };
+		AB93C6F928FC116D00336E71 /* NSURLResponse+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6CC28FC116D00336E71 /* NSURLResponse+Haneke.swift */; };
+		AB93C6FA28FC116D00336E71 /* UIView+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6CD28FC116D00336E71 /* UIView+Haneke.swift */; };
+		AB93C6FB28FC116D00336E71 /* NSHTTPURLResponse+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6CE28FC116D00336E71 /* NSHTTPURLResponse+Haneke.swift */; };
+		AB93C6FC28FC116D00336E71 /* NetworkFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6CF28FC116D00336E71 /* NetworkFetcher.swift */; };
+		AB93C6FD28FC116D00336E71 /* CGSize+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6D028FC116D00336E71 /* CGSize+Swift.swift */; };
+		AB93C6FE28FC116D00336E71 /* UIImage+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6D128FC116D00336E71 /* UIImage+Haneke.swift */; };
+		AB93C6FF28FC116D00336E71 /* Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6D228FC116D00336E71 /* Fetch.swift */; };
+		AB93C70028FC116D00336E71 /* DiskFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6D328FC116D00336E71 /* DiskFetcher.swift */; };
+		AB93C70128FC116D00336E71 /* DiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6D428FC116D00336E71 /* DiskCache.swift */; };
+		AB93C70228FC116D00336E71 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6D528FC116D00336E71 /* Cache.swift */; };
+		AB93C70328FC116D00336E71 /* UIImageView+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6D628FC116D00336E71 /* UIImageView+Haneke.swift */; };
+		AB93C70428FC116D00336E71 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6D728FC116D00336E71 /* Fetcher.swift */; };
+		AB93C70528FC116D00336E71 /* UIButton+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6D828FC116D00336E71 /* UIButton+Haneke.swift */; };
+		AB93C70628FC116D00336E71 /* NSFileManager+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6D928FC116D00336E71 /* NSFileManager+Haneke.swift */; };
+		AB93C70728FC116D00336E71 /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6DB28FC116D00336E71 /* ResultType.swift */; };
+		AB93C70828FC116D00336E71 /* GenericDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6DC28FC116D00336E71 /* GenericDownloadTask.swift */; };
+		AB93C70928FC116D00336E71 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6DD28FC116D00336E71 /* DownloadService.swift */; };
+		AB93C70A28FC116D00336E71 /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB93C6DF28FC116D00336E71 /* Keyboard.xib */; };
+		AB93C70B28FC116D00336E71 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6E028FC116D00336E71 /* KeyboardViewController.swift */; };
+		AB93C70C28FC116D00336E71 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C6E128FC116D00336E71 /* Keyboard.swift */; };
+		AB93C88F28FC11EF00336E71 /* TranslatableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C84928FC11EF00336E71 /* TranslatableStrings.swift */; };
+		AB93C89028FC11EF00336E71 /* OFFProductEcoscoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C84D28FC11EF00336E71 /* OFFProductEcoscoreData.swift */; };
+		AB93C89128FC11EF00336E71 /* OFFProductStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C84E28FC11EF00336E71 /* OFFProductStates.swift */; };
+		AB93C89228FC11EF00336E71 /* OFFProductNutrimentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C84F28FC11EF00336E71 /* OFFProductNutrimentValues.swift */; };
+		AB93C89328FC11EF00336E71 /* OFFProductForestFootPrintData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C85028FC11EF00336E71 /* OFFProductForestFootPrintData.swift */; };
+		AB93C89428FC11EF00336E71 /* OFFProductNutrientLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C85128FC11EF00336E71 /* OFFProductNutrientLevel.swift */; };
+		AB93C89528FC11EF00336E71 /* OFFProductDetailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C85228FC11EF00336E71 /* OFFProductDetailed.swift */; };
+		AB93C89628FC11EF00336E71 /* OFFProductNutrientLevelValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C85328FC11EF00336E71 /* OFFProductNutrientLevelValue.swift */; };
+		AB93C89728FC11EF00336E71 /* OFFProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C85428FC11EF00336E71 /* OFFProduct.swift */; };
+		AB93C89828FC11EF00336E71 /* OFFProductForestFootPrintDataIngredientsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C85528FC11EF00336E71 /* OFFProductForestFootPrintDataIngredientsType.swift */; };
+		AB93C89928FC11EF00336E71 /* OFFProductNutriScoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C85628FC11EF00336E71 /* OFFProductNutriScoreData.swift */; };
+		AB93C89A28FC11EF00336E71 /* OFFProductJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C85728FC11EF00336E71 /* OFFProductJson.swift */; };
+		AB93C89B28FC11EF00336E71 /* OFFProductForestFootPrintDataIngredientsTypeDetailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C85828FC11EF00336E71 /* OFFProductForestFootPrintDataIngredientsTypeDetailed.swift */; };
+		AB93C89C28FC11EF00336E71 /* OFFProductNutrientLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C85928FC11EF00336E71 /* OFFProductNutrientLevels.swift */; };
+		AB93C89D28FC11EF00336E71 /* OFFProductNutriments.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C85A28FC11EF00336E71 /* OFFProductNutriments.swift */; };
+		AB93C89E28FC11EF00336E71 /* OFFProductForestFootPrintDataIngredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C85B28FC11EF00336E71 /* OFFProductForestFootPrintDataIngredients.swift */; };
+		AB93C89F28FC11EF00336E71 /* OpenFoodFactsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C85C28FC11EF00336E71 /* OpenFoodFactsRequest.swift */; };
+		AB93C8A028FC11EF00336E71 /* ProductFetchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C85D28FC11EF00336E71 /* ProductFetchStatus.swift */; };
+		AB93C8A128FC11EF00336E71 /* OFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C85E28FC11EF00336E71 /* OFF.swift */; };
+		AB93C8A228FC11EF00336E71 /* LocaleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C86028FC11EF00336E71 /* LocaleExtension.swift */; };
+		AB93C8A328FC11EF00336E71 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C86128FC11EF00336E71 /* StringExtension.swift */; };
+		AB93C8A428FC11EF00336E71 /* KeyedDecodingContainerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C86228FC11EF00336E71 /* KeyedDecodingContainerExtension.swift */; };
+		AB93C8A528FC11EF00336E71 /* BarcodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C86428FC11EF00336E71 /* BarcodeScanViewController.swift */; };
+		AB93C8A628FC11EF00336E71 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C86728FC11EF00336E71 /* Language.swift */; };
+		AB93C8A728FC11EF00336E71 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C86828FC11EF00336E71 /* Address.swift */; };
+		AB93C8A828FC11EF00336E71 /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C86928FC11EF00336E71 /* Tags.swift */; };
+		AB93C8A928FC11EF00336E71 /* ProductPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C86B28FC11EF00336E71 /* ProductPair.swift */; };
+		AB93C8AA28FC11EF00336E71 /* NutritionalScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C86D28FC11EF00336E71 /* NutritionalScore.swift */; };
+		AB93C8AB28FC11EF00336E71 /* Ecoscore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C86E28FC11EF00336E71 /* Ecoscore.swift */; };
+		AB93C8AC28FC11EF00336E71 /* ProductType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C86F28FC11EF00336E71 /* ProductType.swift */; };
+		AB93C8AD28FC11EF00336E71 /* NutritionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C87028FC11EF00336E71 /* NutritionItem.swift */; };
+		AB93C8AE28FC11EF00336E71 /* NutritionFactItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C87128FC11EF00336E71 /* NutritionFactItem.swift */; };
+		AB93C8AF28FC11EF00336E71 /* NutritionFactUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C87228FC11EF00336E71 /* NutritionFactUnit.swift */; };
+		AB93C8B028FC11EF00336E71 /* MetricPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C87328FC11EF00336E71 /* MetricPrefix.swift */; };
+		AB93C8B128FC11EF00336E71 /* Energy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C87428FC11EF00336E71 /* Energy.swift */; };
+		AB93C8B228FC11EF00336E71 /* BarcodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C87528FC11EF00336E71 /* BarcodeType.swift */; };
+		AB93C8B328FC11EF00336E71 /* LocalizedEnergy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C87628FC11EF00336E71 /* LocalizedEnergy.swift */; };
+		AB93C8B428FC11EF00336E71 /* ForestFootprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C87728FC11EF00336E71 /* ForestFootprint.swift */; };
+		AB93C8B528FC11EF00336E71 /* SIUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C87828FC11EF00336E71 /* SIUnit.swift */; };
+		AB93C8B628FC11EF00336E71 /* NutritionalScoreFR.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C87928FC11EF00336E71 /* NutritionalScoreFR.swift */; };
+		AB93C8B728FC11EF00336E71 /* NutritionEntryUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C87A28FC11EF00336E71 /* NutritionEntryUnit.swift */; };
+		AB93C8B828FC11EF00336E71 /* Nutrient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C87B28FC11EF00336E71 /* Nutrient.swift */; };
+		AB93C8B928FC11EF00336E71 /* NutritionalScoreLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C87C28FC11EF00336E71 /* NutritionalScoreLevel.swift */; };
+		AB93C8BA28FC11EF00336E71 /* NutritionLevelQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C87D28FC11EF00336E71 /* NutritionLevelQuantity.swift */; };
+		AB93C8BB28FC11EF00336E71 /* FoodProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C87E28FC11EF00336E71 /* FoodProduct.swift */; };
+		AB93C8BC28FC11EF00336E71 /* OFFProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C87F28FC11EF00336E71 /* OFFProducts.swift */; };
+		AB93C8BD28FC11EF00336E71 /* Labels.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB93C88128FC11EF00336E71 /* Labels.plist */; };
+		AB93C8BE28FC11EF00336E71 /* Languages.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB93C88228FC11EF00336E71 /* Languages.plist */; };
+		AB93C8BF28FC11EF00336E71 /* ReferenceDailyIntakeValues.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB93C88428FC11EF00336E71 /* ReferenceDailyIntakeValues.plist */; };
+		AB93C8C028FC11EF00336E71 /* ReferenceDailyIntakeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C88528FC11EF00336E71 /* ReferenceDailyIntakeList.swift */; };
+		AB93C8C128FC11EF00336E71 /* VertexNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C88628FC11EF00336E71 /* VertexNew.swift */; };
+		AB93C8C228FC11EF00336E71 /* Ingredients.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB93C88728FC11EF00336E71 /* Ingredients.plist */; };
+		AB93C8C328FC11EF00336E71 /* Diets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C88928FC11EF00336E71 /* Diets.swift */; };
+		AB93C8C428FC11EF00336E71 /* SelectedDietsDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C88A28FC11EF00336E71 /* SelectedDietsDefaults.swift */; };
+		AB93C8C528FC11EF00336E71 /* Diets.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB93C88B28FC11EF00336E71 /* Diets.plist */; };
+		AB93C8C628FC11EF00336E71 /* OFFplists.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C88C28FC11EF00336E71 /* OFFplists.swift */; };
+		AB93C8C728FC11EF00336E71 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93C88D28FC11EF00336E71 /* Node.swift */; };
+		AB93C8C828FC11EF00336E71 /* Categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB93C88E28FC11EF00336E71 /* Categories.plist */; };
+		AB93C8D628FC128200336E71 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AB93C8D528FC128200336E71 /* README.md */; };
+		AB93C8DC28FC12C200336E71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB93C8D828FC12C200336E71 /* LaunchScreen.storyboard */; };
+		AB93C8DD28FC12C200336E71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB93C8DA28FC12C200336E71 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB93C69B28FC0D6500336E71 /* PleaseNoAlliums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PleaseNoAlliums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB93C69E28FC0D6500336E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB93C6A028FC0D6500336E71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB93C6A228FC0D6500336E71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AB93C6A528FC0D6500336E71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB93C6A728FC0D6500336E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AB93C6AA28FC0D6500336E71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB93C6AC28FC0D6500336E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB93C6B428FC116D00336E71 /* RSEANGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSEANGenerator.swift; sourceTree = "<group>"; };
+		AB93C6B528FC116D00336E71 /* RSUnifiedCodeValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSUnifiedCodeValidator.swift; sourceTree = "<group>"; };
+		AB93C6B628FC116D00336E71 /* RSCode39Mod43Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCode39Mod43Generator.swift; sourceTree = "<group>"; };
+		AB93C6B728FC116D00336E71 /* RSCode39Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCode39Generator.swift; sourceTree = "<group>"; };
+		AB93C6B828FC116D00336E71 /* RSCodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCodeReaderViewController.swift; sourceTree = "<group>"; };
+		AB93C6B928FC116D00336E71 /* RSITF14Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSITF14Generator.swift; sourceTree = "<group>"; };
+		AB93C6BA28FC116D00336E71 /* RSCodeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCodeGenerator.swift; sourceTree = "<group>"; };
+		AB93C6BB28FC116D00336E71 /* RSCodeDataMatrixGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCodeDataMatrixGenerator.swift; sourceTree = "<group>"; };
+		AB93C6BC28FC116D00336E71 /* RSCode128Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCode128Generator.swift; sourceTree = "<group>"; };
+		AB93C6BD28FC116D00336E71 /* RSUnifiedCodeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSUnifiedCodeGenerator.swift; sourceTree = "<group>"; };
+		AB93C6BE28FC116D00336E71 /* RSCodeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCodeLayer.swift; sourceTree = "<group>"; };
+		AB93C6BF28FC116D00336E71 /* RSCornersLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCornersLayer.swift; sourceTree = "<group>"; };
+		AB93C6C028FC116D00336E71 /* RSUPCEGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSUPCEGenerator.swift; sourceTree = "<group>"; };
+		AB93C6C128FC116D00336E71 /* RSCode93Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCode93Generator.swift; sourceTree = "<group>"; };
+		AB93C6C228FC116D00336E71 /* RSFocusMarkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSFocusMarkLayer.swift; sourceTree = "<group>"; };
+		AB93C6C328FC116D00336E71 /* RSExtendedCode39Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSExtendedCode39Generator.swift; sourceTree = "<group>"; };
+		AB93C6C428FC116D00336E71 /* RSITFGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSITFGenerator.swift; sourceTree = "<group>"; };
+		AB93C6C628FC116D00336E71 /* Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
+		AB93C6C728FC116D00336E71 /* Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Haneke.swift; sourceTree = "<group>"; };
+		AB93C6C828FC116D00336E71 /* String+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Haneke.swift"; sourceTree = "<group>"; };
+		AB93C6C928FC116D00336E71 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		AB93C6CA28FC116D00336E71 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		AB93C6CB28FC116D00336E71 /* CryptoSwiftMD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoSwiftMD5.swift; sourceTree = "<group>"; };
+		AB93C6CC28FC116D00336E71 /* NSURLResponse+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURLResponse+Haneke.swift"; sourceTree = "<group>"; };
+		AB93C6CD28FC116D00336E71 /* UIView+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Haneke.swift"; sourceTree = "<group>"; };
+		AB93C6CE28FC116D00336E71 /* NSHTTPURLResponse+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSHTTPURLResponse+Haneke.swift"; sourceTree = "<group>"; };
+		AB93C6CF28FC116D00336E71 /* NetworkFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkFetcher.swift; sourceTree = "<group>"; };
+		AB93C6D028FC116D00336E71 /* CGSize+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Swift.swift"; sourceTree = "<group>"; };
+		AB93C6D128FC116D00336E71 /* UIImage+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Haneke.swift"; sourceTree = "<group>"; };
+		AB93C6D228FC116D00336E71 /* Fetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetch.swift; sourceTree = "<group>"; };
+		AB93C6D328FC116D00336E71 /* DiskFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskFetcher.swift; sourceTree = "<group>"; };
+		AB93C6D428FC116D00336E71 /* DiskCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskCache.swift; sourceTree = "<group>"; };
+		AB93C6D528FC116D00336E71 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		AB93C6D628FC116D00336E71 /* UIImageView+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Haneke.swift"; sourceTree = "<group>"; };
+		AB93C6D728FC116D00336E71 /* Fetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		AB93C6D828FC116D00336E71 /* UIButton+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Haneke.swift"; sourceTree = "<group>"; };
+		AB93C6D928FC116D00336E71 /* NSFileManager+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFileManager+Haneke.swift"; sourceTree = "<group>"; };
+		AB93C6DB28FC116D00336E71 /* ResultType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultType.swift; sourceTree = "<group>"; };
+		AB93C6DC28FC116D00336E71 /* GenericDownloadTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDownloadTask.swift; sourceTree = "<group>"; };
+		AB93C6DD28FC116D00336E71 /* DownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		AB93C6DF28FC116D00336E71 /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
+		AB93C6E028FC116D00336E71 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		AB93C6E128FC116D00336E71 /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		AB93C84928FC11EF00336E71 /* TranslatableStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslatableStrings.swift; sourceTree = "<group>"; };
+		AB93C84D28FC11EF00336E71 /* OFFProductEcoscoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFProductEcoscoreData.swift; sourceTree = "<group>"; };
+		AB93C84E28FC11EF00336E71 /* OFFProductStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFProductStates.swift; sourceTree = "<group>"; };
+		AB93C84F28FC11EF00336E71 /* OFFProductNutrimentValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFProductNutrimentValues.swift; sourceTree = "<group>"; };
+		AB93C85028FC11EF00336E71 /* OFFProductForestFootPrintData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFProductForestFootPrintData.swift; sourceTree = "<group>"; };
+		AB93C85128FC11EF00336E71 /* OFFProductNutrientLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFProductNutrientLevel.swift; sourceTree = "<group>"; };
+		AB93C85228FC11EF00336E71 /* OFFProductDetailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFProductDetailed.swift; sourceTree = "<group>"; };
+		AB93C85328FC11EF00336E71 /* OFFProductNutrientLevelValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFProductNutrientLevelValue.swift; sourceTree = "<group>"; };
+		AB93C85428FC11EF00336E71 /* OFFProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFProduct.swift; sourceTree = "<group>"; };
+		AB93C85528FC11EF00336E71 /* OFFProductForestFootPrintDataIngredientsType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFProductForestFootPrintDataIngredientsType.swift; sourceTree = "<group>"; };
+		AB93C85628FC11EF00336E71 /* OFFProductNutriScoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFProductNutriScoreData.swift; sourceTree = "<group>"; };
+		AB93C85728FC11EF00336E71 /* OFFProductJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFProductJson.swift; sourceTree = "<group>"; };
+		AB93C85828FC11EF00336E71 /* OFFProductForestFootPrintDataIngredientsTypeDetailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFProductForestFootPrintDataIngredientsTypeDetailed.swift; sourceTree = "<group>"; };
+		AB93C85928FC11EF00336E71 /* OFFProductNutrientLevels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFProductNutrientLevels.swift; sourceTree = "<group>"; };
+		AB93C85A28FC11EF00336E71 /* OFFProductNutriments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFProductNutriments.swift; sourceTree = "<group>"; };
+		AB93C85B28FC11EF00336E71 /* OFFProductForestFootPrintDataIngredients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFProductForestFootPrintDataIngredients.swift; sourceTree = "<group>"; };
+		AB93C85C28FC11EF00336E71 /* OpenFoodFactsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenFoodFactsRequest.swift; sourceTree = "<group>"; };
+		AB93C85D28FC11EF00336E71 /* ProductFetchStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductFetchStatus.swift; sourceTree = "<group>"; };
+		AB93C85E28FC11EF00336E71 /* OFF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFF.swift; sourceTree = "<group>"; };
+		AB93C86028FC11EF00336E71 /* LocaleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocaleExtension.swift; sourceTree = "<group>"; };
+		AB93C86128FC11EF00336E71 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		AB93C86228FC11EF00336E71 /* KeyedDecodingContainerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainerExtension.swift; sourceTree = "<group>"; };
+		AB93C86428FC11EF00336E71 /* BarcodeScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeScanViewController.swift; sourceTree = "<group>"; };
+		AB93C86728FC11EF00336E71 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		AB93C86828FC11EF00336E71 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		AB93C86928FC11EF00336E71 /* Tags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
+		AB93C86B28FC11EF00336E71 /* ProductPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductPair.swift; sourceTree = "<group>"; };
+		AB93C86D28FC11EF00336E71 /* NutritionalScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionalScore.swift; sourceTree = "<group>"; };
+		AB93C86E28FC11EF00336E71 /* Ecoscore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ecoscore.swift; sourceTree = "<group>"; };
+		AB93C86F28FC11EF00336E71 /* ProductType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductType.swift; sourceTree = "<group>"; };
+		AB93C87028FC11EF00336E71 /* NutritionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionItem.swift; sourceTree = "<group>"; };
+		AB93C87128FC11EF00336E71 /* NutritionFactItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionFactItem.swift; sourceTree = "<group>"; };
+		AB93C87228FC11EF00336E71 /* NutritionFactUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionFactUnit.swift; sourceTree = "<group>"; };
+		AB93C87328FC11EF00336E71 /* MetricPrefix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricPrefix.swift; sourceTree = "<group>"; };
+		AB93C87428FC11EF00336E71 /* Energy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Energy.swift; sourceTree = "<group>"; };
+		AB93C87528FC11EF00336E71 /* BarcodeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeType.swift; sourceTree = "<group>"; };
+		AB93C87628FC11EF00336E71 /* LocalizedEnergy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedEnergy.swift; sourceTree = "<group>"; };
+		AB93C87728FC11EF00336E71 /* ForestFootprint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForestFootprint.swift; sourceTree = "<group>"; };
+		AB93C87828FC11EF00336E71 /* SIUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIUnit.swift; sourceTree = "<group>"; };
+		AB93C87928FC11EF00336E71 /* NutritionalScoreFR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionalScoreFR.swift; sourceTree = "<group>"; };
+		AB93C87A28FC11EF00336E71 /* NutritionEntryUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionEntryUnit.swift; sourceTree = "<group>"; };
+		AB93C87B28FC11EF00336E71 /* Nutrient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nutrient.swift; sourceTree = "<group>"; };
+		AB93C87C28FC11EF00336E71 /* NutritionalScoreLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionalScoreLevel.swift; sourceTree = "<group>"; };
+		AB93C87D28FC11EF00336E71 /* NutritionLevelQuantity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionLevelQuantity.swift; sourceTree = "<group>"; };
+		AB93C87E28FC11EF00336E71 /* FoodProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodProduct.swift; sourceTree = "<group>"; };
+		AB93C87F28FC11EF00336E71 /* OFFProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFProducts.swift; sourceTree = "<group>"; };
+		AB93C88128FC11EF00336E71 /* Labels.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Labels.plist; sourceTree = "<group>"; };
+		AB93C88228FC11EF00336E71 /* Languages.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Languages.plist; sourceTree = "<group>"; };
+		AB93C88428FC11EF00336E71 /* ReferenceDailyIntakeValues.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ReferenceDailyIntakeValues.plist; sourceTree = "<group>"; };
+		AB93C88528FC11EF00336E71 /* ReferenceDailyIntakeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceDailyIntakeList.swift; sourceTree = "<group>"; };
+		AB93C88628FC11EF00336E71 /* VertexNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VertexNew.swift; sourceTree = "<group>"; };
+		AB93C88728FC11EF00336E71 /* Ingredients.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Ingredients.plist; sourceTree = "<group>"; };
+		AB93C88928FC11EF00336E71 /* Diets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diets.swift; sourceTree = "<group>"; };
+		AB93C88A28FC11EF00336E71 /* SelectedDietsDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedDietsDefaults.swift; sourceTree = "<group>"; };
+		AB93C88B28FC11EF00336E71 /* Diets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Diets.plist; sourceTree = "<group>"; };
+		AB93C88C28FC11EF00336E71 /* OFFplists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFFplists.swift; sourceTree = "<group>"; };
+		AB93C88D28FC11EF00336E71 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		AB93C88E28FC11EF00336E71 /* Categories.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Categories.plist; sourceTree = "<group>"; };
+		AB93C8D528FC128200336E71 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AB93C8D928FC12C200336E71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB93C8DB28FC12C200336E71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +258,277 @@
 		AB93C69D28FC0D6500336E71 /* PleaseNoAlliums */ = {
 			isa = PBXGroup;
 			children = (
+				AB93C8D728FC12C200336E71 /* Base.lproj */,
+				AB93C8D528FC128200336E71 /* README.md */,
+				AB93C84728FC11EF00336E71 /* FV */,
+				AB93C6B228FC116D00336E71 /* Frameworks */,
 				AB93C69E28FC0D6500336E71 /* AppDelegate.swift */,
 				AB93C6A028FC0D6500336E71 /* SceneDelegate.swift */,
-				AB93C6A228FC0D6500336E71 /* ViewController.swift */,
-				AB93C6A428FC0D6500336E71 /* Main.storyboard */,
 				AB93C6A728FC0D6500336E71 /* Assets.xcassets */,
-				AB93C6A928FC0D6500336E71 /* LaunchScreen.storyboard */,
 				AB93C6AC28FC0D6500336E71 /* Info.plist */,
 			);
 			path = PleaseNoAlliums;
+			sourceTree = "<group>";
+		};
+		AB93C6B228FC116D00336E71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C6B328FC116D00336E71 /* RS */,
+				AB93C6C528FC116D00336E71 /* Haneke */,
+				AB93C6DA28FC116D00336E71 /* Download */,
+				AB93C6DE28FC116D00336E71 /* Keyboard */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB93C6B328FC116D00336E71 /* RS */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C6B428FC116D00336E71 /* RSEANGenerator.swift */,
+				AB93C6B528FC116D00336E71 /* RSUnifiedCodeValidator.swift */,
+				AB93C6B628FC116D00336E71 /* RSCode39Mod43Generator.swift */,
+				AB93C6B728FC116D00336E71 /* RSCode39Generator.swift */,
+				AB93C6B828FC116D00336E71 /* RSCodeReaderViewController.swift */,
+				AB93C6B928FC116D00336E71 /* RSITF14Generator.swift */,
+				AB93C6BA28FC116D00336E71 /* RSCodeGenerator.swift */,
+				AB93C6BB28FC116D00336E71 /* RSCodeDataMatrixGenerator.swift */,
+				AB93C6BC28FC116D00336E71 /* RSCode128Generator.swift */,
+				AB93C6BD28FC116D00336E71 /* RSUnifiedCodeGenerator.swift */,
+				AB93C6BE28FC116D00336E71 /* RSCodeLayer.swift */,
+				AB93C6BF28FC116D00336E71 /* RSCornersLayer.swift */,
+				AB93C6C028FC116D00336E71 /* RSUPCEGenerator.swift */,
+				AB93C6C128FC116D00336E71 /* RSCode93Generator.swift */,
+				AB93C6C228FC116D00336E71 /* RSFocusMarkLayer.swift */,
+				AB93C6C328FC116D00336E71 /* RSExtendedCode39Generator.swift */,
+				AB93C6C428FC116D00336E71 /* RSITFGenerator.swift */,
+			);
+			path = RS;
+			sourceTree = "<group>";
+		};
+		AB93C6C528FC116D00336E71 /* Haneke */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C6C628FC116D00336E71 /* Format.swift */,
+				AB93C6C728FC116D00336E71 /* Haneke.swift */,
+				AB93C6C828FC116D00336E71 /* String+Haneke.swift */,
+				AB93C6C928FC116D00336E71 /* Log.swift */,
+				AB93C6CA28FC116D00336E71 /* Data.swift */,
+				AB93C6CB28FC116D00336E71 /* CryptoSwiftMD5.swift */,
+				AB93C6CC28FC116D00336E71 /* NSURLResponse+Haneke.swift */,
+				AB93C6CD28FC116D00336E71 /* UIView+Haneke.swift */,
+				AB93C6CE28FC116D00336E71 /* NSHTTPURLResponse+Haneke.swift */,
+				AB93C6CF28FC116D00336E71 /* NetworkFetcher.swift */,
+				AB93C6D028FC116D00336E71 /* CGSize+Swift.swift */,
+				AB93C6D128FC116D00336E71 /* UIImage+Haneke.swift */,
+				AB93C6D228FC116D00336E71 /* Fetch.swift */,
+				AB93C6D328FC116D00336E71 /* DiskFetcher.swift */,
+				AB93C6D428FC116D00336E71 /* DiskCache.swift */,
+				AB93C6D528FC116D00336E71 /* Cache.swift */,
+				AB93C6D628FC116D00336E71 /* UIImageView+Haneke.swift */,
+				AB93C6D728FC116D00336E71 /* Fetcher.swift */,
+				AB93C6D828FC116D00336E71 /* UIButton+Haneke.swift */,
+				AB93C6D928FC116D00336E71 /* NSFileManager+Haneke.swift */,
+			);
+			path = Haneke;
+			sourceTree = "<group>";
+		};
+		AB93C6DA28FC116D00336E71 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C6DB28FC116D00336E71 /* ResultType.swift */,
+				AB93C6DC28FC116D00336E71 /* GenericDownloadTask.swift */,
+				AB93C6DD28FC116D00336E71 /* DownloadService.swift */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		AB93C6DE28FC116D00336E71 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C6DF28FC116D00336E71 /* Keyboard.xib */,
+				AB93C6E028FC116D00336E71 /* KeyboardViewController.swift */,
+				AB93C6E128FC116D00336E71 /* Keyboard.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		AB93C84728FC11EF00336E71 /* FV */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C84828FC11EF00336E71 /* UI */,
+				AB93C84A28FC11EF00336E71 /* Network */,
+				AB93C85F28FC11EF00336E71 /* Extensions */,
+				AB93C86328FC11EF00336E71 /* ViewControllers */,
+				AB93C86528FC11EF00336E71 /* Model */,
+				AB93C88028FC11EF00336E71 /* Data */,
+			);
+			path = FV;
+			sourceTree = "<group>";
+		};
+		AB93C84828FC11EF00336E71 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C84928FC11EF00336E71 /* TranslatableStrings.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AB93C84A28FC11EF00336E71 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C84B28FC11EF00336E71 /* ProductFetchAPI */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AB93C84B28FC11EF00336E71 /* ProductFetchAPI */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C84C28FC11EF00336E71 /* Jsons */,
+				AB93C85C28FC11EF00336E71 /* OpenFoodFactsRequest.swift */,
+				AB93C85D28FC11EF00336E71 /* ProductFetchStatus.swift */,
+				AB93C85E28FC11EF00336E71 /* OFF.swift */,
+			);
+			path = ProductFetchAPI;
+			sourceTree = "<group>";
+		};
+		AB93C84C28FC11EF00336E71 /* Jsons */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C84D28FC11EF00336E71 /* OFFProductEcoscoreData.swift */,
+				AB93C84E28FC11EF00336E71 /* OFFProductStates.swift */,
+				AB93C84F28FC11EF00336E71 /* OFFProductNutrimentValues.swift */,
+				AB93C85028FC11EF00336E71 /* OFFProductForestFootPrintData.swift */,
+				AB93C85128FC11EF00336E71 /* OFFProductNutrientLevel.swift */,
+				AB93C85228FC11EF00336E71 /* OFFProductDetailed.swift */,
+				AB93C85328FC11EF00336E71 /* OFFProductNutrientLevelValue.swift */,
+				AB93C85428FC11EF00336E71 /* OFFProduct.swift */,
+				AB93C85528FC11EF00336E71 /* OFFProductForestFootPrintDataIngredientsType.swift */,
+				AB93C85628FC11EF00336E71 /* OFFProductNutriScoreData.swift */,
+				AB93C85728FC11EF00336E71 /* OFFProductJson.swift */,
+				AB93C85828FC11EF00336E71 /* OFFProductForestFootPrintDataIngredientsTypeDetailed.swift */,
+				AB93C85928FC11EF00336E71 /* OFFProductNutrientLevels.swift */,
+				AB93C85A28FC11EF00336E71 /* OFFProductNutriments.swift */,
+				AB93C85B28FC11EF00336E71 /* OFFProductForestFootPrintDataIngredients.swift */,
+			);
+			path = Jsons;
+			sourceTree = "<group>";
+		};
+		AB93C85F28FC11EF00336E71 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C86028FC11EF00336E71 /* LocaleExtension.swift */,
+				AB93C86128FC11EF00336E71 /* StringExtension.swift */,
+				AB93C86228FC11EF00336E71 /* KeyedDecodingContainerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AB93C86328FC11EF00336E71 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C86428FC11EF00336E71 /* BarcodeScanViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AB93C86528FC11EF00336E71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C86628FC11EF00336E71 /* Basic */,
+				AB93C86A28FC11EF00336E71 /* Product */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB93C86628FC11EF00336E71 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C86728FC11EF00336E71 /* Language.swift */,
+				AB93C86828FC11EF00336E71 /* Address.swift */,
+				AB93C86928FC11EF00336E71 /* Tags.swift */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		AB93C86A28FC11EF00336E71 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C86B28FC11EF00336E71 /* ProductPair.swift */,
+				AB93C86C28FC11EF00336E71 /* ProductElements */,
+				AB93C87E28FC11EF00336E71 /* FoodProduct.swift */,
+				AB93C87F28FC11EF00336E71 /* OFFProducts.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		AB93C86C28FC11EF00336E71 /* ProductElements */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C86D28FC11EF00336E71 /* NutritionalScore.swift */,
+				AB93C86E28FC11EF00336E71 /* Ecoscore.swift */,
+				AB93C86F28FC11EF00336E71 /* ProductType.swift */,
+				AB93C87028FC11EF00336E71 /* NutritionItem.swift */,
+				AB93C87128FC11EF00336E71 /* NutritionFactItem.swift */,
+				AB93C87228FC11EF00336E71 /* NutritionFactUnit.swift */,
+				AB93C87328FC11EF00336E71 /* MetricPrefix.swift */,
+				AB93C87428FC11EF00336E71 /* Energy.swift */,
+				AB93C87528FC11EF00336E71 /* BarcodeType.swift */,
+				AB93C87628FC11EF00336E71 /* LocalizedEnergy.swift */,
+				AB93C87728FC11EF00336E71 /* ForestFootprint.swift */,
+				AB93C87828FC11EF00336E71 /* SIUnit.swift */,
+				AB93C87928FC11EF00336E71 /* NutritionalScoreFR.swift */,
+				AB93C87A28FC11EF00336E71 /* NutritionEntryUnit.swift */,
+				AB93C87B28FC11EF00336E71 /* Nutrient.swift */,
+				AB93C87C28FC11EF00336E71 /* NutritionalScoreLevel.swift */,
+				AB93C87D28FC11EF00336E71 /* NutritionLevelQuantity.swift */,
+			);
+			path = ProductElements;
+			sourceTree = "<group>";
+		};
+		AB93C88028FC11EF00336E71 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C88128FC11EF00336E71 /* Labels.plist */,
+				AB93C88228FC11EF00336E71 /* Languages.plist */,
+				AB93C88328FC11EF00336E71 /* ReferenceDailyIntake */,
+				AB93C88628FC11EF00336E71 /* VertexNew.swift */,
+				AB93C88728FC11EF00336E71 /* Ingredients.plist */,
+				AB93C88828FC11EF00336E71 /* Diets */,
+				AB93C88C28FC11EF00336E71 /* OFFplists.swift */,
+				AB93C88D28FC11EF00336E71 /* Node.swift */,
+				AB93C88E28FC11EF00336E71 /* Categories.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AB93C88328FC11EF00336E71 /* ReferenceDailyIntake */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C88428FC11EF00336E71 /* ReferenceDailyIntakeValues.plist */,
+				AB93C88528FC11EF00336E71 /* ReferenceDailyIntakeList.swift */,
+			);
+			path = ReferenceDailyIntake;
+			sourceTree = "<group>";
+		};
+		AB93C88828FC11EF00336E71 /* Diets */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C88928FC11EF00336E71 /* Diets.swift */,
+				AB93C88A28FC11EF00336E71 /* SelectedDietsDefaults.swift */,
+				AB93C88B28FC11EF00336E71 /* Diets.plist */,
+			);
+			path = Diets;
+			sourceTree = "<group>";
+		};
+		AB93C8D728FC12C200336E71 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				AB93C8D828FC12C200336E71 /* LaunchScreen.storyboard */,
+				AB93C8DA28FC12C200336E71 /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = ../../PleaseNoGarlic/PleaseNoGarlic/Base.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +589,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB93C6AB28FC0D6500336E71 /* LaunchScreen.storyboard in Resources */,
 				AB93C6A828FC0D6500336E71 /* Assets.xcassets in Resources */,
-				AB93C6A628FC0D6500336E71 /* Main.storyboard in Resources */,
+				AB93C8D628FC128200336E71 /* README.md in Resources */,
+				AB93C8DD28FC12C200336E71 /* Main.storyboard in Resources */,
+				AB93C8BE28FC11EF00336E71 /* Languages.plist in Resources */,
+				AB93C8C528FC11EF00336E71 /* Diets.plist in Resources */,
+				AB93C8BD28FC11EF00336E71 /* Labels.plist in Resources */,
+				AB93C70A28FC116D00336E71 /* Keyboard.xib in Resources */,
+				AB93C8BF28FC11EF00336E71 /* ReferenceDailyIntakeValues.plist in Resources */,
+				AB93C8C828FC11EF00336E71 /* Categories.plist in Resources */,
+				AB93C8DC28FC12C200336E71 /* LaunchScreen.storyboard in Resources */,
+				AB93C8C228FC11EF00336E71 /* Ingredients.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,29 +610,122 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB93C6A328FC0D6500336E71 /* ViewController.swift in Sources */,
+				AB93C89328FC11EF00336E71 /* OFFProductForestFootPrintData.swift in Sources */,
+				AB93C6FF28FC116D00336E71 /* Fetch.swift in Sources */,
+				AB93C8A028FC11EF00336E71 /* ProductFetchStatus.swift in Sources */,
+				AB93C88F28FC11EF00336E71 /* TranslatableStrings.swift in Sources */,
+				AB93C8C628FC11EF00336E71 /* OFFplists.swift in Sources */,
+				AB93C6F128FC116D00336E71 /* RSExtendedCode39Generator.swift in Sources */,
+				AB93C8AC28FC11EF00336E71 /* ProductType.swift in Sources */,
+				AB93C70028FC116D00336E71 /* DiskFetcher.swift in Sources */,
+				AB93C8C328FC11EF00336E71 /* Diets.swift in Sources */,
+				AB93C6F328FC116D00336E71 /* Format.swift in Sources */,
+				AB93C8B328FC11EF00336E71 /* LocalizedEnergy.swift in Sources */,
+				AB93C6EF28FC116D00336E71 /* RSCode93Generator.swift in Sources */,
+				AB93C8B928FC11EF00336E71 /* NutritionalScoreLevel.swift in Sources */,
+				AB93C8C428FC11EF00336E71 /* SelectedDietsDefaults.swift in Sources */,
+				AB93C70528FC116D00336E71 /* UIButton+Haneke.swift in Sources */,
+				AB93C6E828FC116D00336E71 /* RSCodeGenerator.swift in Sources */,
+				AB93C8BC28FC11EF00336E71 /* OFFProducts.swift in Sources */,
+				AB93C70728FC116D00336E71 /* ResultType.swift in Sources */,
+				AB93C8A428FC11EF00336E71 /* KeyedDecodingContainerExtension.swift in Sources */,
+				AB93C8B528FC11EF00336E71 /* SIUnit.swift in Sources */,
+				AB93C8C728FC11EF00336E71 /* Node.swift in Sources */,
+				AB93C89F28FC11EF00336E71 /* OpenFoodFactsRequest.swift in Sources */,
+				AB93C8B728FC11EF00336E71 /* NutritionEntryUnit.swift in Sources */,
+				AB93C6F828FC116D00336E71 /* CryptoSwiftMD5.swift in Sources */,
+				AB93C8B428FC11EF00336E71 /* ForestFootprint.swift in Sources */,
+				AB93C6F528FC116D00336E71 /* String+Haneke.swift in Sources */,
+				AB93C8BA28FC11EF00336E71 /* NutritionLevelQuantity.swift in Sources */,
+				AB93C8B128FC11EF00336E71 /* Energy.swift in Sources */,
+				AB93C6FE28FC116D00336E71 /* UIImage+Haneke.swift in Sources */,
+				AB93C70228FC116D00336E71 /* Cache.swift in Sources */,
+				AB93C6F728FC116D00336E71 /* Data.swift in Sources */,
+				AB93C89228FC11EF00336E71 /* OFFProductNutrimentValues.swift in Sources */,
+				AB93C8B028FC11EF00336E71 /* MetricPrefix.swift in Sources */,
 				AB93C69F28FC0D6500336E71 /* AppDelegate.swift in Sources */,
+				AB93C8A628FC11EF00336E71 /* Language.swift in Sources */,
+				AB93C8BB28FC11EF00336E71 /* FoodProduct.swift in Sources */,
+				AB93C8B828FC11EF00336E71 /* Nutrient.swift in Sources */,
+				AB93C8A328FC11EF00336E71 /* StringExtension.swift in Sources */,
+				AB93C6E628FC116D00336E71 /* RSCodeReaderViewController.swift in Sources */,
+				AB93C89128FC11EF00336E71 /* OFFProductStates.swift in Sources */,
+				AB93C8A928FC11EF00336E71 /* ProductPair.swift in Sources */,
+				AB93C6F228FC116D00336E71 /* RSITFGenerator.swift in Sources */,
+				AB93C89A28FC11EF00336E71 /* OFFProductJson.swift in Sources */,
+				AB93C89C28FC11EF00336E71 /* OFFProductNutrientLevels.swift in Sources */,
+				AB93C8A828FC11EF00336E71 /* Tags.swift in Sources */,
+				AB93C8AE28FC11EF00336E71 /* NutritionFactItem.swift in Sources */,
+				AB93C8C028FC11EF00336E71 /* ReferenceDailyIntakeList.swift in Sources */,
+				AB93C70928FC116D00336E71 /* DownloadService.swift in Sources */,
+				AB93C8B228FC11EF00336E71 /* BarcodeType.swift in Sources */,
+				AB93C6E328FC116D00336E71 /* RSUnifiedCodeValidator.swift in Sources */,
+				AB93C8AF28FC11EF00336E71 /* NutritionFactUnit.swift in Sources */,
+				AB93C6EC28FC116D00336E71 /* RSCodeLayer.swift in Sources */,
+				AB93C89D28FC11EF00336E71 /* OFFProductNutriments.swift in Sources */,
+				AB93C6ED28FC116D00336E71 /* RSCornersLayer.swift in Sources */,
+				AB93C6FD28FC116D00336E71 /* CGSize+Swift.swift in Sources */,
+				AB93C8A728FC11EF00336E71 /* Address.swift in Sources */,
+				AB93C70C28FC116D00336E71 /* Keyboard.swift in Sources */,
+				AB93C89728FC11EF00336E71 /* OFFProduct.swift in Sources */,
+				AB93C89528FC11EF00336E71 /* OFFProductDetailed.swift in Sources */,
+				AB93C6E528FC116D00336E71 /* RSCode39Generator.swift in Sources */,
+				AB93C70128FC116D00336E71 /* DiskCache.swift in Sources */,
+				AB93C6EB28FC116D00336E71 /* RSUnifiedCodeGenerator.swift in Sources */,
+				AB93C6F628FC116D00336E71 /* Log.swift in Sources */,
+				AB93C70628FC116D00336E71 /* NSFileManager+Haneke.swift in Sources */,
+				AB93C8AA28FC11EF00336E71 /* NutritionalScore.swift in Sources */,
+				AB93C6EE28FC116D00336E71 /* RSUPCEGenerator.swift in Sources */,
+				AB93C6E428FC116D00336E71 /* RSCode39Mod43Generator.swift in Sources */,
+				AB93C6F428FC116D00336E71 /* Haneke.swift in Sources */,
+				AB93C6F928FC116D00336E71 /* NSURLResponse+Haneke.swift in Sources */,
+				AB93C89828FC11EF00336E71 /* OFFProductForestFootPrintDataIngredientsType.swift in Sources */,
+				AB93C70428FC116D00336E71 /* Fetcher.swift in Sources */,
 				AB93C6A128FC0D6500336E71 /* SceneDelegate.swift in Sources */,
+				AB93C6FC28FC116D00336E71 /* NetworkFetcher.swift in Sources */,
+				AB93C89E28FC11EF00336E71 /* OFFProductForestFootPrintDataIngredients.swift in Sources */,
+				AB93C89628FC11EF00336E71 /* OFFProductNutrientLevelValue.swift in Sources */,
+				AB93C6FA28FC116D00336E71 /* UIView+Haneke.swift in Sources */,
+				AB93C70B28FC116D00336E71 /* KeyboardViewController.swift in Sources */,
+				AB93C8C128FC11EF00336E71 /* VertexNew.swift in Sources */,
+				AB93C89928FC11EF00336E71 /* OFFProductNutriScoreData.swift in Sources */,
+				AB93C8A528FC11EF00336E71 /* BarcodeScanViewController.swift in Sources */,
+				AB93C70828FC116D00336E71 /* GenericDownloadTask.swift in Sources */,
+				AB93C8B628FC11EF00336E71 /* NutritionalScoreFR.swift in Sources */,
+				AB93C89028FC11EF00336E71 /* OFFProductEcoscoreData.swift in Sources */,
+				AB93C6E228FC116D00336E71 /* RSEANGenerator.swift in Sources */,
+				AB93C89428FC11EF00336E71 /* OFFProductNutrientLevel.swift in Sources */,
+				AB93C8AD28FC11EF00336E71 /* NutritionItem.swift in Sources */,
+				AB93C8AB28FC11EF00336E71 /* Ecoscore.swift in Sources */,
+				AB93C6F028FC116D00336E71 /* RSFocusMarkLayer.swift in Sources */,
+				AB93C6EA28FC116D00336E71 /* RSCode128Generator.swift in Sources */,
+				AB93C89B28FC11EF00336E71 /* OFFProductForestFootPrintDataIngredientsTypeDetailed.swift in Sources */,
+				AB93C6E928FC116D00336E71 /* RSCodeDataMatrixGenerator.swift in Sources */,
+				AB93C6FB28FC116D00336E71 /* NSHTTPURLResponse+Haneke.swift in Sources */,
+				AB93C8A228FC11EF00336E71 /* LocaleExtension.swift in Sources */,
+				AB93C70328FC116D00336E71 /* UIImageView+Haneke.swift in Sources */,
+				AB93C6E728FC116D00336E71 /* RSITF14Generator.swift in Sources */,
+				AB93C8A128FC11EF00336E71 /* OFF.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AB93C6A428FC0D6500336E71 /* Main.storyboard */ = {
+		AB93C8D828FC12C200336E71 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AB93C6A528FC0D6500336E71 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AB93C6A928FC0D6500336E71 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AB93C6AA28FC0D6500336E71 /* Base */,
+				AB93C8D928FC12C200336E71 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AB93C8DA28FC12C200336E71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB93C8DB28FC12C200336E71 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -290,11 +855,14 @@
 				DEVELOPMENT_TEAM = Q4FXMVWJ7V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PleaseNoAlliums/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is used for scanning barcodes";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +872,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,11 +886,14 @@
 				DEVELOPMENT_TEAM = Q4FXMVWJ7V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PleaseNoAlliums/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is used for scanning barcodes";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +903,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
